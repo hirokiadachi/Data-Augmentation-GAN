@@ -1,0 +1,22 @@
+training:
+    batch_size: 64
+    epochs: 100
+    z_dim: 100
+    lr: 0.0001
+    beta:
+        - 0.0
+        - 0.9
+    weight_decay: 0.0001
+    tb: 'logs'
+    img_size: 32
+    num_classes: 10
+    dataset: 'cifar10'
+    dropout_rate: 0.5
+    gp_lambda: 10
+        
+test:
+    batch_size: 1
+    num_classes: 10
+    limit: 100000
+    img_size: 32
+    dataset: 'cifar10'
